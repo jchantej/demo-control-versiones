@@ -19,3 +19,6 @@ script:
 # ============ mvn sonar:sonar ... =======================================================
 #  Se analiza y sube a sonar cloud
 - mvn sonar:sonar -Dsonar.organization=jchantej-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=5764a3c111aa839db2183baebf4311399ada17b1 --settings settings.xml
+#============ mvn package --settings settings.xml  (profile: preproduction) =====================================
+
+call mvn verify -Denvironment.type=preproduction --settings settings.xml
