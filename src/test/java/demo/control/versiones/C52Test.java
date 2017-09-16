@@ -1,5 +1,21 @@
 package demo.control.versiones;
 
-public class C52Test {
+import static org.junit.Assert.*;
 
+import org.junit.Before;
+import org.junit.Test;
+
+public class C52Test {
+    private C52 c52;
+
+    @Before
+    public void before() {
+        c52 = new C52();
+    }
+
+    @Test
+    public void testC21m1() {
+        assertEquals("C52.mA" ,c52.mA());
+    }
+    
 }
